@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+    font-family: 'Patrick Hand', cursive;
+    color: #dbdbdb;
+}
+#center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 15px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1 , #count-num {
+    font-size: 2.6rem;
+    height: .1rem;
+    margin-bottom: 10rem;
+}
+#count-num{
+    font-size: 3.9rem;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #454544;
+    padding: .9rem;
+    font-size: 1.3rem;
+    font-family: 'Patrick Hand', cursive;
+    border: 1px solid #454544;
+    color: #dbdbdb;
+    transition: .3s linear;
+    cursor: pointer;
+    margin: 0 .7rem;
+}
+button:hover{
+    color: #454544;
+    background-color: #d1d1d1;
+}
