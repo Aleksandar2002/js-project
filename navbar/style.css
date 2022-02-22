@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #404040;
+    color: #ebebeb;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    box-shadow: 1px 0 10px #ebebeb;
+    padding: 2rem;  
+    height: 7rem;
+}
+.wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-weight: 300;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+    margin: 0 12px;
+    padding:10px 3px;
+}
+a{
+    color: #ebebeb;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    padding: 12px;
+    text-align: center;
+}
+li:hover a{
+    color: #404040;
+}
+li:hover{
+    background-color: #ebebeb;
+}
+button{
+    outline: none;
+    background-color: transparent;
+    color: #ebebeb;
+    border: none;
+    font-size: 25px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.menu-btn-div{
+    display: none;
+}
+button:hover{
+    transform: rotate(-90deg);
+}
+/*.bar{
+    transform: rotate(90deg);
+    width: 1px;
+    transition: .4s ease-in-out;
+    font-size: 19px;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    margin: 3px;
+
+}
+button:hover .bar{
+    flex-direction: column;
+}
+button:hover #first-bar{
+    transform: rotate(0deg)
+    translate(2px ,4px);
+}
+button:hover #second-bar{
+    display: none;
+}
+button:hover #third-bar{
+    transform: rotate(135deg);
+}*/
+@media screen and (max-width:1000px) {
+    nav{
+        transition:opacity .7s ease ;
+        position: absolute;
+        width: 300px;
+        left: 1rem;
+        top: 0;
+        background-color: #ebebeb;
+        opacity: 0;
+    }
+    .menu-btn-div{
+        display: block;
+    }
+    a{
+        color: #404040;
+    }
+    ul{
+        width: 100%;
+    }
+    li{
+        margin: 0;
+        display: block;
+        padding: 12px;
+        text-align: center;
+        width: 100%;
+    }
+li:hover a{
+    color: #ebebeb;
+}
+li:hover{
+    background-color: #404040;
+}
+}
