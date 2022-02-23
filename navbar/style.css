@@ -45,20 +45,33 @@ li:hover a{
 li:hover{
     background-color: #ebebeb;
 }
-button{
+.menu-btn{
     outline: none;
-    background-color: transparent;
-    color: #ebebeb;
+    background-color: #ebebeb;
     border: none;
+    width: 32px;
+    border-radius: 5px;
+    height: 3px;
     font-size: 25px;
-    transition: .5s ease-in-out;
-    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.menu-btn::after , .menu-btn::before{
+    content: '';
+    width: 32px;
+    height: 3px;
+    border-radius:5px ;
+    margin: 10px 0;
+    position: absolute;
+    transition: .4s ease-in-out;
+    background-color: #ebebeb;
+}
+.menu-btn::before{
+    margin:-10px 0;
 }
 .menu-btn-div{
+    padding: 13px 7px;
+    cursor: pointer;
     display: none;
-}
-button:hover{
-    transform: rotate(-90deg);
 }
 /*.bar{
     transform: rotate(90deg);
@@ -88,11 +101,11 @@ button:hover #third-bar{
 }*/
 @media screen and (max-width:1000px) {
     nav{
-        transition:opacity .7s ease ;
+        transition:all .7s ease ;
         position: absolute;
         width: 300px;
-        left: 1rem;
-        top: 0;
+        left: -20rem;
+        top: 8rem;
         background-color: #ebebeb;
         opacity: 0;
     }
@@ -118,4 +131,14 @@ li:hover a{
 li:hover{
     background-color: #404040;
 }
+}
+.open{
+    transform: translateX(-50px);
+    background: transparent;
+}
+.open::after{
+    transform:translate(50px , -10px) rotate(45deg) ;
+}
+.open::before{
+    transform:translate(50px , 9px) rotate(-45deg) ;
 }
