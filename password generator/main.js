@@ -10,8 +10,9 @@ let niz = [];
 let i=65 , j=0 , k=0;
 
 generateBtn.addEventListener("click" , ()=>{
-    if(lengthInput.value<8){
-        window.alert("Password mustn't be less than 8! Write it again");
+    if(lengthInput.value<8 || lengthInput.value>50){
+        window.alert("Password mustn't be less than 8 and greater than 50! Type it again");
+
     }
     else{
         clearInput();
@@ -49,7 +50,6 @@ generateBtn.addEventListener("click" , ()=>{
                 }
             }
         }
-        console.log(upperArray);
             for(i=0 ; i< lengthInput.value ; i++){
                 passInput.value += upperArray[Math.floor(Math.random() * upperArray.length)];
             }   
