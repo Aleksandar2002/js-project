@@ -10,7 +10,7 @@ let niz = [];
 let i=65 , j=0 , k=0;
 
 generateBtn.addEventListener("click" , ()=>{
-    if(lengthInput.value<=8){
+    if(lengthInput.value<8){
         window.alert("Password mustn't be less than 8! Write it again");
     }
     else{
@@ -56,6 +56,11 @@ generateBtn.addEventListener("click" , ()=>{
     }
 })
 
+copyBtn.addEventListener("click" , ()=>{
+    passInput.select();
+    passInput.setSelectionRange(0, 99999); /* For mobile devices */
+    navigator.clipboard.writeText(passInput.value);
+})
 //  FUNCTIONS
 
 function clearInput(){
