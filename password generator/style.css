@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: #00f2b2;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.password-card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px #00f2b2;
+          box-shadow: 0px 0px 10px #00f2b2;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+.password-card h1 {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.password-card .password-card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6px;
+}
+
+.password-card .password-card-row input {
+  color: #00f2b2;
+  background-color: #2e2e2e;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #00f2b2;
+}
+
+.password-card .password-card-row .check-btn {
+  background-color: #2e2e2e;
+  border: 1px solid #00f2b2;
+}
+
+.password-card .password-card-row .check-btn:checked {
+  background-color: #00f2b2;
+}
+
+.password-card .password-card-row #pass-length {
+  width: 90px;
+}
+
+.password-card .one {
+  margin-bottom: 20px;
+}
+
+.password-card #generate {
+  margin-top: 20px;
+}
+
+.checkbox > input {
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 2px;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #2e2e2e;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #00f2b2;
+  color: #00f2b2;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00f2b2;
+  color: #2e2e2e;
+}
+/*# sourceMappingURL=style.css.map */

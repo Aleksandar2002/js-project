@@ -1,0 +1,84 @@
+$plava:#00f2b2;
+$crna:#2e2e2e;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $crna;
+    color: $plava;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.password-card{
+    h1{
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px $plava;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    .password-card-row{
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 6px;
+        input{
+            color: $plava;
+            background-color: $crna;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-bottom:1px solid $plava ;
+        }
+        .check-btn{
+            background-color: $crna;
+            border: 1px solid $plava;
+            &:checked{
+                background-color: $plava;
+            }
+        }
+        #pass-length{
+            width: 90px;
+        }
+    }
+    .one{
+        margin-bottom: 20px;
+    }
+    #generate{
+        margin-top: 20px;
+    }
+}
+
+.checkbox > input {
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    border-radius: 2px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+button{
+    padding:8px 15px;
+    background-color: $crna;
+    cursor: pointer;
+    border: none;
+    border: 1px solid $plava;
+    color: $plava;
+    transition: .3s ease-in-out;
+    &:hover{
+        background-color: $plava;
+        color: $crna;
+    }
+}
