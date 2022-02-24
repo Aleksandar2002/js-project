@@ -8,7 +8,9 @@ let symbolArray = ["#" ,"$" , "%"  , "_"]
 let niz = [];
 
 let i=65 , j=0 , k=0;
-
+for(i = 0 ; i<4 ; i++){
+    checkBtns[i].checked = true;
+}
 generateBtn.addEventListener("click" , ()=>{
     if(lengthInput.value<8 || lengthInput.value>50){
         window.alert("Password mustn't be less than 8 and greater than 50! Type it again");
