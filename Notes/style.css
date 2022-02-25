@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #dedede;
+}
+
+#add {
+  color: #dedede;
+  padding: 13px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #383838;
+  background-color: #383838;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+#add:hover {
+  background-color: #22f29f;
+  color: #383838;
+}
+
+#notes {
+  margin: 6rem 0 5rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 91%;
+}
+
+#notes .note-card {
+  height: 25rem;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  width: 400px;
+  background-color: #22f29f;
+  -webkit-box-shadow: 0.5px 0.5px 10px #383838;
+          box-shadow: 0.5px 0.5px 10px #383838;
+}
+
+#notes .note-card header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #383838;
+  color: #dedede;
+}
+
+#notes .note-card header .center-block {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#notes .note-card header .center-block input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 8px;
+  color: #dedede;
+}
+
+#notes .note-card header .center-block button {
+  padding: 7px;
+  background-color: #383838;
+  color: #22f29f;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+#notes .note-card header .center-block button:hover {
+  color: #dedede;
+}
+
+#notes .note-card .body {
+  width: 100%;
+  height: 100%;
+  padding: 10px 13px;
+}
+
+#notes .note-card .body input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+  padding: 10px;
+  color: #383838;
+}
+/*# sourceMappingURL=style.css.map */
