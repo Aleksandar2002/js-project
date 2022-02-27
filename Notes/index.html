@@ -16,20 +16,22 @@
 <body>
     <button id="add">++ Add notes</button>
     <div id="notes">
-        <div class="note-card">
-            <header>
-                <div class="center-block">
-                    <input type="text" class="head-text" />
-                    <div class="btns">
-                        <button class="edit" onclick="Edit(0)"><i class="fas fa-pen"></i></button>
-                        <button class="delete" onclick="deleteF(0)"><i class="fas fa-trash"></i></button>
+        <template notes-template>
+            <div class="note-card">
+                <header>
+                    <div class="center-block">
+                        <input type="text" class="head-text" />
+                        <div class="btns">
+                            <button class="edit" onclick="Edit(0)"><i class="fas fa-pen"></i></button>
+                            <button class="delete" onclick="deleteF(0)"><i class="fas fa-trash"></i></button>
+                        </div>
                     </div>
+                </header>
+                <div class="body">
+                    <input type="text" class="note-text" name="note-text" />
                 </div>
-            </header>
-            <div class="body">
-                <input type="text" class="note-text" name="note-text" />
             </div>
-        </div>
+        </template>
     </div>
 </body>
 </html>

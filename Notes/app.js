@@ -1,15 +1,16 @@
 let addBtn = document.querySelector("#add");
-let editBtn = document.querySelector("#edit");
-let deleteBtn = document.querySelector("#delete");
-let headerInput = document.querySelector("#head-text");
-let noteInput = document.querySelector("#note-text");
 let notes = document.querySelector("#notes");
 let i=0;
 let ind = 0;
-let noteCard , headerCard , centerBlock , newHeaderInput , btnsDiv, newEditBtn , newDeleteBtn , bodyDiv , newNoteInput;
+//let noteCard , headerCard , centerBlock , newHeaderInput , btnsDiv, newEditBtn , newDeleteBtn , bodyDiv , newNoteInput;
 
+let noteTemplate = document.querySelector("[notes-template]")
+
+let card = noteTemplate.content.cloneNode(true).children[0];
+notes.append(card);
 // ADD BTN
 addBtn.addEventListener("click", ()=>{
+/* STUPID WAY
     i++;
     // note card div
     noteCard = document.createElement("div");
@@ -65,7 +66,13 @@ addBtn.addEventListener("click", ()=>{
 
     noteCard.append(bodyDiv);
 
-    notes.appendChild(noteCard);
+    notes.appendChild(noteCard); */
+    // SMART WAY
+    i++;
+    card = noteTemplate.content.cloneNode(true).children[0];
+    card.querySelector(".delete").setAttribute("onclick" , "deleteF("+i+")");
+    card.querySelector(".edit").setAttribute("onclick" , "Edit("+i+")");
+    notes.append(card);
 
 })
 
