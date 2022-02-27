@@ -4,11 +4,13 @@ let deleteBtn = document.querySelector("#delete");
 let headerInput = document.querySelector("#head-text");
 let noteInput = document.querySelector("#note-text");
 let notes = document.querySelector("#notes");
-let ind=0;
+let i=0;
+let ind = 0;
 let noteCard , headerCard , centerBlock , newHeaderInput , btnsDiv, newEditBtn , newDeleteBtn , bodyDiv , newNoteInput;
 
 // ADD BTN
 addBtn.addEventListener("click", ()=>{
+    i++;
     // note card div
     noteCard = document.createElement("div");
     noteCard.classList.add("note-card");
@@ -23,7 +25,7 @@ addBtn.addEventListener("click", ()=>{
     // input H
     newHeaderInput = document.createElement("input");
     newHeaderInput.setAttribute( "type" , "text");
-    newHeaderInput.id = "head-text"; 
+    newHeaderInput.classList.add("head-text"); 
 
     // note card div
     btnsDiv = document.createElement("div");
@@ -31,14 +33,15 @@ addBtn.addEventListener("click", ()=>{
 
     //  btns 
     newEditBtn = document.createElement("button");
-    newEditBtn.id = "edit";
-    newEditBtn.setAttribute( "onclick" , "Edit()");
+    newEditBtn.classList.add("edit");
+    newEditBtn.setAttribute( "onclick" , "Edit("+i+")");
     newEditBtn.innerHTML = '<i class="fas fa-pen"></i>';
     
     btnsDiv.appendChild(newEditBtn);
 
     newDeleteBtn = document.createElement("button");
-    newDeleteBtn.id = "delete";
+    newDeleteBtn.classList.add("delete");
+    newDeleteBtn.setAttribute( "onclick" , "deleteF("+i+")");
     newDeleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     btnsDiv.appendChild(newDeleteBtn);
 
@@ -56,22 +59,30 @@ addBtn.addEventListener("click", ()=>{
     newNoteInput = document.createElement("input");
     newNoteInput.setAttribute( "type" , "text");
     newNoteInput.setAttribute( "name" , "note-text");
-    newNoteInput.id = "note-text"; 
+    newNoteInput.classList.add( "note-text"); 
 
     bodyDiv.appendChild(newNoteInput);
 
     noteCard.append(bodyDiv);
 
     notes.appendChild(noteCard);
+
 })
 
-function Edit(){
-    if(ind==0){
-        headerInput.focus(); 
-        ind=1;
+function deleteF( broj){
+    let noteCards = document.querySelectorAll(".note-card");    
+    noteCards[broj].style.display = "none";
+}
+
+function Edit(broj){
+    let noteCards = document.querySelectorAll(".note-card");      
+    if(ind == 0)
+    {
+        noteCards[broj].querySelectorAll("input")[0].focus();
+        ind= 1;
     }
     else{
-        noteInput.focus(); 
-        ind=0;
+        noteCards[broj].querySelectorAll("input")[1].focus();
+        ind= 0;
     }
 }
