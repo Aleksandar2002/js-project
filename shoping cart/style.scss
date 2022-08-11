@@ -1,0 +1,122 @@
+$plava:#0b2945;
+$bela:#ededed;
+$crna:#262626;
+$font1: 'Saira', sans-serif;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $plava;
+    color: $bela;
+    min-height: 100vh;
+    font-family: $font1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main{
+        h1{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+        width: 900px;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $crna;
+        #items{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 100%;
+            .item{
+                .info,.operations{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;                    
+                    flex-direction: column;
+                    width: 50%;
+                    input{
+                        width: 5rem;
+                        padding:5px 10px;
+                        margin: 20px;
+                        background-color: $bela;
+                        outline: none;
+                        border: none;
+                        transition: .4s ease-in-out;
+                        &:focus{
+                            background-color: $crna;
+                            color: $bela;
+                        }
+                    }
+                    button{
+                        background-color: $bela;
+                        padding: 7px;
+                        width: 50px;
+                        border: none;
+                        outline: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: .4s ease-in-out;
+                    &:hover{
+                        background-color: $crna;
+                        color: $bela;
+                    }
+                    }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        #cart{
+            background-color: #366f8a;
+            height: 100%;
+            position: relative;
+            width: 50%;
+            padding: 15px;
+            h1{
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            .cartItems{
+                .cartItem{
+                    display: flex;
+                    padding: 10px;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $crna;
+                    background-color: $bela;
+                    .removeBtn{
+                        padding: 10px;
+                        color: $bela;
+                        background-color: $crna;
+                        outline: none;
+                        border: none;
+                        transition: .4s ease-in-out;
+                        cursor: pointer;
+                        border-radius: 3px;
+                        &:hover{
+                            background-color: #366f8a;
+                        }
+                    }
+                }
+            }
+            #bill{
+                display: none;
+                position: absolute;
+                bottom: 5%;
+                left: 30%;
+                p{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

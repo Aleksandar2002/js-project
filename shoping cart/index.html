@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet"/>
+    <title>Shopping cart</title>
+</head>
+<body>
+    <div class="main">
+        <div id="items">
+            <div class="item">
+                <div class="info">
+                    <h1 class="itemName">Paprika</h1>
+                    <p><span class="price">7</span>$</p>
+                </div>
+                <div class="operations">
+                    <input type="number" class="quant" name="quant"/>
+                    <button class="addbtn">Dodaj</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="info">
+                    <h1 class="itemName">Mleko</h1>
+                    <p><span class="price">5</span>$</p>
+                </div>
+                <div class="operations">
+                    <input type="number" class="quant" name="quant"/>
+                    <button class="addbtn">Dodaj</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="info">
+                    <h1 class="itemName">Jabuke</h1>
+                    <p><span class="price">4</span>$</p>
+                </div>
+                <div class="operations">
+                    <input type="number" class="quant" name="quant"/>
+                    <button class="addbtn">Dodaj</button>
+                </div>
+            </div>
+        </div>
+        <div id="cart">
+            <h1>Korpa</h1>
+            <div class="cartItems">
+
+            </div>
+            <div id="bill">
+                <p>Ukupna Cena:  </p>
+                <p id="total-price"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

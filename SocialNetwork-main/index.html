@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="img/logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"/>
+    <title>Socify</title>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+        <h1>Social network for all gamers and developers :)</h1>
+        <div class="login">
+            <h2>Login</h2>
+            <form action="stranica.php">
+                <div class="single_row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="name@gmail.com"/>
+                </div>
+                <div class="single_row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="pass" placeholder="********"/>
+                </div>
+                <button type="submit" id="log_in">Log in</button>
+            </form>
+        </div>
+        <div class="register">
+            <p>Don't have an account?</p>
+            <button id="sign_up">Sign up</button>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup_cont">
+            <h2>User registration</h2>
+            <form action="stranica.php">
+                <div class="single_row">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="nick15"/>
+                </div>
+                <div class="single_row">
+                    <label for="email2">Email:</label>
+                    <input type="email" name="email2" placeholder="name@gmail.com"/>
+                </div>
+                <div class="single_row">
+                    <label for="password2">Password:</label>
+                    <input type="password" name="password2" placeholder="********"/>
+                </div>
+                <div class="single_row">
+                    <label for="confirm_pass">Confirm password:</label>
+                    <input type="password" name="confirm_pass" placeholder="********"/>
+                </div>
+                <button type="submit" id="sign">Sing up</button>
+            </form>
+            <button id="close">+</button>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <script src="js/Validator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="img/logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"/>
+    <title>Hexa</title>
+</head>
+<body>
+    <div class="wrapper hexa">
+        <div class="hexa-main">
+            <div class="profile">
+                <img src="img/profile.jpg" alt="Profile img"/>
+                <p id="username-par">pera</p>
+                <p id="email-par">Pera</p>
+                <span class="btns">
+                    <button id="edit">Edit profile</button>
+                    <button id="log-out">Log out</button>
+                </span>
+            </div>
+            <div class="comments">
+                <div class="row first">
+                    <form action="stranica.php">
+                        <input type="text" name="post" id="post" placeholder="Type a post">
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+                <ul>
+                    <li>
+                        <div class="row com">
+                            <div class="com-text"><p>Learning about nice Egyptian artifacts</p></div>
+                            <hr/>
+                            <div class="bottom">
+                                <p>Author: 23jamie</p>
+                                <div class="comands">
+                                    <button class="like">
+                                        <img src="img/like.png" alt="like btn"/>
+                                        <p><span>25</span> likes</p>
+                                    </button>
+                                    <button class="comment">
+                                        <img src="img/comment.png" alt="coment btn"/>
+                                        <p>Comments</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="addCom">
+                                <form action="stranica.php">
+                                    <input type="text" name="comment" id="" placeholder="Type a comment"/>
+                                    <button class="addComBtn">Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row com">
+                            <div class="com-text"><p>Having nice time :)</p></div>
+                            <hr/>
+                            <div class="bottom">
+                                <p>Author: Katie_21</p>
+                                <div class="comands">
+                                    <button class="like">
+                                        <img src="img/like.png" alt="like btn"/>
+                                        <p><span>32</span> likes</p>
+                                    </button>
+                                    <button class="comment">
+                                        <img src="img/comment.png" alt="coment btn"/>
+                                        <p>Comments</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="addCom">
+                                <form action="stranica.php">
+                                    <input type="text" name="comment" id="" placeholder="Type a comment"/>
+                                    <button class="addComBtn">Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row com">
+                            <div class="com-text"><p>Today i'm going on a 2 week holiday</p></div>
+                            <hr/>
+                            <div class="bottom">
+                                <p>Author: Marcus12</p>
+                                <div class="comands">
+                                    <button class="like">
+                                        <img src="img/like.png" alt="like btn"/>
+                                        <p><span>55</span> likes</p>
+                                    </button>
+                                    <button class="comment">
+                                        <img src="img/comment.png" alt="coment btn"/>
+                                        <p>Comments</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="addCom">
+                                <form action="stranica.php">
+                                    <input type="text" name="comment" id="" placeholder="Type a comment"/>
+                                    <button class="addComBtn">Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup_cont">
+            <h2>Change profile</h2>
+            <form action="stranica.php">
+                <div class="single_row">
+                    <label for="user">Username:</label>
+                    <input type="text" name="user" id="user" placeholder="name23"/>
+                </div>
+                <div class="single_row">
+                    <label for="email3">Email:</label>
+                    <input type="email" name="email3" id="email3" placeholder="name@gmail.com"/>
+                </div>
+                <button type="submit" id="log_in">Change</button>
+                <hr>
+                <button id="delete">Delete profile</button>
+            </form>
+            <button id="close">+</button>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <script src="js/Validator.js"></script>
+    <script src="js/hexa.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

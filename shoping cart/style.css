@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0b2945;
+  color: #ededed;
+  min-height: 100vh;
+  font-family: "Saira", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main {
+  width: 900px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262626;
+}
+
+body .main h1 {
+  font-size: 1.4rem;
+}
+
+body .main p {
+  font-size: 1.1rem;
+}
+
+body .main #items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+body .main #items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body .main #items .item .info, body .main #items .item .operations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+body .main #items .item .info input, body .main #items .item .operations input {
+  width: 5rem;
+  padding: 5px 10px;
+  margin: 20px;
+  background-color: #ededed;
+  outline: none;
+  border: none;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+body .main #items .item .info input:focus, body .main #items .item .operations input:focus {
+  background-color: #262626;
+  color: #ededed;
+}
+
+body .main #items .item .info button, body .main #items .item .operations button {
+  background-color: #ededed;
+  padding: 7px;
+  width: 50px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+body .main #items .item .info button:hover, body .main #items .item .operations button:hover {
+  background-color: #262626;
+  color: #ededed;
+}
+
+body .main #cart {
+  background-color: #366f8a;
+  height: 100%;
+  position: relative;
+  width: 50%;
+  padding: 15px;
+}
+
+body .main #cart h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+body .main #cart .cartItems .cartItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262626;
+  background-color: #ededed;
+}
+
+body .main #cart .cartItems .cartItem .removeBtn {
+  padding: 10px;
+  color: #ededed;
+  background-color: #262626;
+  outline: none;
+  border: none;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+body .main #cart .cartItems .cartItem .removeBtn:hover {
+  background-color: #366f8a;
+}
+
+body .main #cart #bill {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
+
+body .main #cart #bill p {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
